@@ -1,0 +1,36 @@
+{
+  "name": "pixijs-first-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "vanthieu97",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "babel-loader": "^8.2.5",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "imagemin-webpack-plugin": "^2.4.2",
+    "stats.js": "^0.17.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0",
+    "webpack-merge": "^5.8.0"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.dev.js",
+    "dev": "webpack --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "dependencies": {
+    "@pixi/display": "^6.5.1",
+    "@pixi/filter-blur": "^6.5.1",
+    "@pixi/graphics": "^6.5.1",
+    "@pixi/sprite": "^6.5.1",
+    "pixi-sound": "^3.0.5",
+    "pixi.js": "^6.5.1"
+  }
+}
