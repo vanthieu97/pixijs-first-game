@@ -1,8 +1,8 @@
 {
   "name": "pixijs-first-game",
   "version": "1.0.0",
+  "homepage": "https://vanthieu97.github.io/pixijs-first-game",
   "description": "",
-  "main": "index.js",
   "author": "vanthieu97",
   "license": "MIT",
   "devDependencies": {
@@ -11,6 +11,7 @@
     "babel-loader": "^8.2.5",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^11.0.0",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "imagemin-webpack-plugin": "^2.4.2",
     "stats.js": "^0.17.0",
@@ -23,7 +24,9 @@
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js",
     "dev": "webpack --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@pixi/display": "^6.5.1",

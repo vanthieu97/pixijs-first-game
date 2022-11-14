@@ -1,4 +1,4 @@
-// import * as PIXI from "pixi.js";
+import { Loader } from "pixi.js";
 
 const { isMobile } = require("pixi.js");
 import { STAGE } from "./constant";
@@ -32,7 +32,7 @@ if (isMobile.any) {
 let idleScreen, playingScreen, gameOverScreen;
 
 //load assets
-app.loader
+Loader.shared
   .add("bg", "assets/bg.png")
   .add("plane_dead", "assets/plane/dead.png")
   .add("plane_fly_1", "assets/plane/fly_1.png")
